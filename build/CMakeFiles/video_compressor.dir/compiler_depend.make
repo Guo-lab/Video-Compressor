@@ -910,6 +910,9 @@ CMakeFiles/video_compressor.dir/src/main.cpp.o: /Users/guosiqi/Desktop/Video-Com
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/guosiqi/Desktop/Video-Compressor/include/algorithms/base_algorithm.hpp \
+  /Users/guosiqi/Desktop/Video-Compressor/include/algorithms/downsample_algorithm.hpp \
+  /Users/guosiqi/Desktop/Video-Compressor/include/utils/audio.hpp \
   /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/imgproc/segmentation.hpp \
   /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/calib3d.hpp \
   /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/core.hpp \
@@ -1136,6 +1139,8 @@ CMakeFiles/video_compressor.dir/src/main.cpp.o: /Users/guosiqi/Desktop/Video-Com
 
 /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/core/affine.hpp:
 
+/Users/guosiqi/Desktop/Video-Compressor/include/algorithms/downsample_algorithm.hpp:
+
 /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/dnn/version.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
@@ -1235,6 +1240,8 @@ CMakeFiles/video_compressor.dir/src/main.cpp.o: /Users/guosiqi/Desktop/Video-Com
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_clr.h:
+
+/Users/guosiqi/Desktop/Video-Compressor/include/algorithms/base_algorithm.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_errno_t.h:
 
@@ -2399,6 +2406,8 @@ CMakeFiles/video_compressor.dir/src/main.cpp.o: /Users/guosiqi/Desktop/Video-Com
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/calendar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_constructible.h:
+
+/Users/guosiqi/Desktop/Video-Compressor/include/utils/audio.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__compare/partial_order.h:
 

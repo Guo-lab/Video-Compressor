@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/base_algorithm.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/algorithms/base_algorithm.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/pipeline.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/pipeline.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/utils/audio.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/utils/audio.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor.dir/src/main.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/main.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/main.cpp",
+  "output": "CMakeFiles/video_compressor.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/test_video_compressor.dir/test.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/tests/test.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/tests/test.cpp",
+  "output": "tests/CMakeFiles/test_video_compressor.dir/test.cpp.o"
+}
+]

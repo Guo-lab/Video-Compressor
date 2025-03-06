@@ -5,5 +5,5 @@ DerivePointerAlignment: false
 PointerAlignment: Right
 IndentWidth: 4
 TabWidth: 4
-ColumnLimit: 120
+ColumnLimit: 110
 AllowShortIfStatementsOnASingleLine: true

@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4
 
-CXX_FLAGSarm64 = -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror
+CXX_FLAGSarm64 = -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17
 
-CXX_FLAGS = -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror
+CXX_FLAGS = -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17
 

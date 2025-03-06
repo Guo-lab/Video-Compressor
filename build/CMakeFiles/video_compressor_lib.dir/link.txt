@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libvideo_compressor_lib.a CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc libvideo_compressor_lib.a CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib libvideo_compressor_lib.a

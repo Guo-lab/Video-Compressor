@@ -179,6 +179,30 @@ src/algorithms/base_algorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.s
 .PHONY : src/algorithms/base_algorithm.cpp.s
 
+src/algorithms/downsample_algorithm.o: src/algorithms/downsample_algorithm.cpp.o
+.PHONY : src/algorithms/downsample_algorithm.o
+
+# target to build an object file
+src/algorithms/downsample_algorithm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o
+.PHONY : src/algorithms/downsample_algorithm.cpp.o
+
+src/algorithms/downsample_algorithm.i: src/algorithms/downsample_algorithm.cpp.i
+.PHONY : src/algorithms/downsample_algorithm.i
+
+# target to preprocess a source file
+src/algorithms/downsample_algorithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.i
+.PHONY : src/algorithms/downsample_algorithm.cpp.i
+
+src/algorithms/downsample_algorithm.s: src/algorithms/downsample_algorithm.cpp.s
+.PHONY : src/algorithms/downsample_algorithm.s
+
+# target to generate assembly for a file
+src/algorithms/downsample_algorithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.s
+.PHONY : src/algorithms/downsample_algorithm.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -203,6 +227,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor.dir/build.make CMakeFiles/video_compressor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/pipeline.o: src/pipeline.cpp.o
+.PHONY : src/pipeline.o
+
+# target to build an object file
+src/pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o
+.PHONY : src/pipeline.cpp.o
+
+src/pipeline.i: src/pipeline.cpp.i
+.PHONY : src/pipeline.i
+
+# target to preprocess a source file
+src/pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.i
+.PHONY : src/pipeline.cpp.i
+
+src/pipeline.s: src/pipeline.cpp.s
+.PHONY : src/pipeline.s
+
+# target to generate assembly for a file
+src/pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.s
+.PHONY : src/pipeline.cpp.s
+
+src/utils/audio.o: src/utils/audio.cpp.o
+.PHONY : src/utils/audio.o
+
+# target to build an object file
+src/utils/audio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o
+.PHONY : src/utils/audio.cpp.o
+
+src/utils/audio.i: src/utils/audio.cpp.i
+.PHONY : src/utils/audio.i
+
+# target to preprocess a source file
+src/utils/audio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.i
+.PHONY : src/utils/audio.cpp.i
+
+src/utils/audio.s: src/utils/audio.cpp.s
+.PHONY : src/utils/audio.s
+
+# target to generate assembly for a file
+src/utils/audio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.s
+.PHONY : src/utils/audio.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -217,9 +289,18 @@ help:
 	@echo "... src/algorithms/base_algorithm.o"
 	@echo "... src/algorithms/base_algorithm.i"
 	@echo "... src/algorithms/base_algorithm.s"
+	@echo "... src/algorithms/downsample_algorithm.o"
+	@echo "... src/algorithms/downsample_algorithm.i"
+	@echo "... src/algorithms/downsample_algorithm.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pipeline.o"
+	@echo "... src/pipeline.i"
+	@echo "... src/pipeline.s"
+	@echo "... src/utils/audio.o"
+	@echo "... src/utils/audio.i"
+	@echo "... src/utils/audio.s"
 .PHONY : help
 
 
