@@ -1,0 +1,7 @@
+/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles/video_compressor_lib.dir
+/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles/video_compressor.dir
+/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles/edit_cache.dir
+/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles/rebuild_cache.dir
+/Users/guosiqi/Desktop/Video-Compressor/build/tests/CMakeFiles/test_video_compressor.dir
+/Users/guosiqi/Desktop/Video-Compressor/build/tests/CMakeFiles/edit_cache.dir
+/Users/guosiqi/Desktop/Video-Compressor/build/tests/CMakeFiles/rebuild_cache.dir
