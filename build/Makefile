@@ -179,29 +179,29 @@ src/algorithms/base_algorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.s
 .PHONY : src/algorithms/base_algorithm.cpp.s
 
-src/algorithms/downsample_algorithm.o: src/algorithms/downsample_algorithm.cpp.o
-.PHONY : src/algorithms/downsample_algorithm.o
+src/algorithms/cv_downsample_algorithm.o: src/algorithms/cv_downsample_algorithm.cpp.o
+.PHONY : src/algorithms/cv_downsample_algorithm.o
 
 # target to build an object file
-src/algorithms/downsample_algorithm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o
-.PHONY : src/algorithms/downsample_algorithm.cpp.o
+src/algorithms/cv_downsample_algorithm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o
+.PHONY : src/algorithms/cv_downsample_algorithm.cpp.o
 
-src/algorithms/downsample_algorithm.i: src/algorithms/downsample_algorithm.cpp.i
-.PHONY : src/algorithms/downsample_algorithm.i
+src/algorithms/cv_downsample_algorithm.i: src/algorithms/cv_downsample_algorithm.cpp.i
+.PHONY : src/algorithms/cv_downsample_algorithm.i
 
 # target to preprocess a source file
-src/algorithms/downsample_algorithm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.i
-.PHONY : src/algorithms/downsample_algorithm.cpp.i
+src/algorithms/cv_downsample_algorithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.i
+.PHONY : src/algorithms/cv_downsample_algorithm.cpp.i
 
-src/algorithms/downsample_algorithm.s: src/algorithms/downsample_algorithm.cpp.s
-.PHONY : src/algorithms/downsample_algorithm.s
+src/algorithms/cv_downsample_algorithm.s: src/algorithms/cv_downsample_algorithm.cpp.s
+.PHONY : src/algorithms/cv_downsample_algorithm.s
 
 # target to generate assembly for a file
-src/algorithms/downsample_algorithm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.s
-.PHONY : src/algorithms/downsample_algorithm.cpp.s
+src/algorithms/cv_downsample_algorithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.s
+.PHONY : src/algorithms/cv_downsample_algorithm.cpp.s
 
 src/core/decoder.o: src/core/decoder.cpp.o
 .PHONY : src/core/decoder.o
@@ -361,9 +361,9 @@ help:
 	@echo "... src/algorithms/base_algorithm.o"
 	@echo "... src/algorithms/base_algorithm.i"
 	@echo "... src/algorithms/base_algorithm.s"
-	@echo "... src/algorithms/downsample_algorithm.o"
-	@echo "... src/algorithms/downsample_algorithm.i"
-	@echo "... src/algorithms/downsample_algorithm.s"
+	@echo "... src/algorithms/cv_downsample_algorithm.o"
+	@echo "... src/algorithms/cv_downsample_algorithm.i"
+	@echo "... src/algorithms/cv_downsample_algorithm.s"
 	@echo "... src/core/decoder.o"
 	@echo "... src/core/decoder.i"
 	@echo "... src/core/decoder.s"

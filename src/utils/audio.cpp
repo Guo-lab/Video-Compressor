@@ -1,5 +1,8 @@
 #include "utils/audio.hpp"
 
+namespace vcompress {
+namespace utils {
+
 // Use FFmpeg to extract audio from input video
 bool extractAudio(const std::string &inputVideo, const std::string &outputAudio) {
     std::string cmd = "ffmpeg -i \"" + inputVideo + "\" -vn -acodec copy \"" + outputAudio + "\" -y";
@@ -17,3 +20,6 @@ bool combineVideoAudio(const std::string &videoFile, const std::string &audioFil
     int result = std::system(cmd.c_str());
     return result == 0;
 }
+
+} // namespace utils
+} // namespace vcompress

@@ -1,0 +1,193 @@
+Due to the nature of the disk, Write Buffer Efficiency, Read Overhead, 
+Sequential vs. Random Access, 
+the wirte to the huge file is faster than read from it (.vcomp file).
+
+Additionally, downsampling (using INTER_AREA) is very efficient, 
+but upsampling with INTER_LINEAR creates new pixels through interpolation, 
+which is more compute-intensive.
+
+
+
+(base) Guos-MBP-2:build guosiqi$ ./video_compressor ../input_videos/SABRINA.mp4 ../output_videos/output.mp4 -a Downsample --keep-temp
+Initialized downsample algorithm with factor: 4
+Created and initialized algorithm: Downsample
+<i> Extracting audio from the original video...
+Extracting audio: ffmpeg -i "../input_videos/SABRINA.mp4" -vn -acodec copy "temp_audio.aac" -y
+ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.6)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '../input_videos/SABRINA.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: isommp41mp42
+    creation_time   : 2025-03-06T02:18:50.000000Z
+  Duration: 00:03:29.92, start: 0.000000, bitrate: 2071 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1440x1080 [SAR 1:1 DAR 4:3], 2028 kb/s, 29.99 fps, 30 tbr, 16k tbn (default)
+      Metadata:
+        creation_time   : 2025-03-06T02:18:50.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (HE-AAC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 35 kb/s (default)
+      Metadata:
+        creation_time   : 2025-03-06T02:18:50.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (copy)
+Output #0, adts, to 'temp_audio.aac':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: isommp41mp42
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Audio: aac (HE-AAC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 35 kb/s (default)
+      Metadata:
+        creation_time   : 2025-03-06T02:18:50.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+Press [q] to stop, [?] for help
+[out#0/adts @ 0x102b04f90] video:0KiB audio:900KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 3.435820%
+size=     931KiB time=00:03:29.91 bitrate=  36.3kbits/s speed=3.67e+03x    
+<ii> Processing video frames with Downsample algorithm...
+Opened input video file: ../input_videos/SABRINA.mp4
+  Dimensions: 1440x1080
+  FPS: 29.9867
+  Duration: 210.23 seconds
+  Frame count: 6304
+Opened compressed file: data.vcomp
+  Dimensions: 1440x1080
+  FPS: 29986
+  Algorithm ID: 1
+Processed 0 frames...
+Processed 500 frames...
+Processed 1000 frames...
+Processed 1500 frames...
+Processed 2000 frames...
+Processed 2500 frames...
+Processed 3000 frames...
+Processed 3500 frames...
+Processed 4000 frames...
+Processed 4500 frames...
+Processed 5000 frames...
+Processed 5500 frames...
+Processed 6000 frames...
+Completed processing 6297 frames.
+Video processing Encoding completed successfully!
+Compressed Data saved to: data.vcomp
+Encoding Statistics:
+  Algorithm: Downsample
+  Frames processed: 6297
+  Total input size: 29379283200 bytes
+  Total output size: 1836255576 bytes
+  Compression ratio: 15.9996:1
+  Average time per frame: 0.647389 ms
+  Total processing time: 12.5724 seconds
+Algorithm Statistics:
+Downsample Algorithm Statistics:
+  Downsample factor: 4
+  Frames compressed: 6297
+  Frames decompressed: 0
+  Average compression ratio: 16:1
+  Average compression time: 0.344191 ms
+
+Initialized downsample algorithm with factor: 4
+Created and initialized algorithm: Downsample
+<iii> Processing video frames with decompression Downsample algorithm...
+Opened compressed file: data.vcomp
+  Dimensions: 1440x1080
+  FPS: 29.99
+  Algorithm ID: 1
+Original video dimensions: 1440x1080
+Original video FPS: 29.99
+OpenCV: FFMPEG: tag 0x34363248/'H264' is not supported with codec id 27 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x31637661/'avc1'
+Opened output video file: temp_processed_video.mp4
+  Dimensions: 1440x1080
+  FPS: 29.99
+  Quality: 75
+Decompressed 500 frames...
+Decompressed 1000 frames...
+Decompressed 1500 frames...
+Decompressed 2000 frames...
+Decompressed 2500 frames...
+Decompressed 3000 frames...
+Decompressed 3500 frames...
+Decompressed 4000 frames...
+Decompressed 4500 frames...
+Decompressed 5000 frames...
+Decompressed 5500 frames...
+Decompressed 6000 frames...
+Completed decompressing 6297 frames.
+<iv> Combining processed video with original audio...
+Combining video and audio: ffmpeg -i "temp_processed_video.mp4" -i "temp_audio.aac" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 "../output_videos/output.mp4" -y
+ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.6)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'temp_processed_video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:03:30.00, start: 0.000000, bitrate: 3362 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1080, 3359 kb/s, 29.99 fps, 29.99 tbr, 29986 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+[aac @ 0x11b604c30] Estimating duration from bitrate, this may be inaccurate
+Input #1, aac, from 'temp_audio.aac':
+  Duration: 00:03:28.44, bitrate: 36 kb/s
+  Stream #1:0: Audio: aac (LC), 44100 Hz, stereo, fltp, 36 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, mp4, to '../output_videos/output.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1080, q=2-31, 3359 kb/s, 29.99 fps, 29.99 tbr, 29986 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 aac
+[out#0/mp4 @ 0x11b605770] video:86120KiB audio:3330KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.246977%
+frame= 6297 fps=2736 q=-1.0 Lsize=   89670KiB time=00:03:29.93 bitrate=3499.1kbits/s speed=91.2x    
+[aac @ 0x12b62f420] Qavg: 865.141
+Video processing Decoding completed successfully!
+Final Output saved to: ../output_videos/output.mp4
+Decoding Statistics:
+  Algorithm: Downsample
+  Frames processed: 6297
+  Total input size: 1836255576 bytes
+  Total output size: 29379283200 bytes
+  Average time per frame: 7.60447 ms
+  Total processing time: 51.5953 seconds
+Algorithm Statistics:
+Downsample Algorithm Statistics:
+  Downsample factor: 4
+  Frames compressed: 0
+  Frames decompressed: 6297
+  Average compression ratio: 0:1
+  Average decompression time: 1.51012 ms

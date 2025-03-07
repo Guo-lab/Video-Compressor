@@ -130,6 +130,30 @@ test_video_compressor/fast:
 	cd /Users/guosiqi/Desktop/Video-Compressor/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_video_compressor.dir/build.make tests/CMakeFiles/test_video_compressor.dir/build
 .PHONY : test_video_compressor/fast
 
+pipeline.o: pipeline.cpp.o
+.PHONY : pipeline.o
+
+# target to build an object file
+pipeline.cpp.o:
+	cd /Users/guosiqi/Desktop/Video-Compressor/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_video_compressor.dir/build.make tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o
+.PHONY : pipeline.cpp.o
+
+pipeline.i: pipeline.cpp.i
+.PHONY : pipeline.i
+
+# target to preprocess a source file
+pipeline.cpp.i:
+	cd /Users/guosiqi/Desktop/Video-Compressor/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_video_compressor.dir/build.make tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.i
+.PHONY : pipeline.cpp.i
+
+pipeline.s: pipeline.cpp.s
+.PHONY : pipeline.s
+
+# target to generate assembly for a file
+pipeline.cpp.s:
+	cd /Users/guosiqi/Desktop/Video-Compressor/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_video_compressor.dir/build.make tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.s
+.PHONY : pipeline.cpp.s
+
 test.o: test.cpp.o
 .PHONY : test.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_video_compressor"
+	@echo "... pipeline.o"
+	@echo "... pipeline.i"
+	@echo "... pipeline.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

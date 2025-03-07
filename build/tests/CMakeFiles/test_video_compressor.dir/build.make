@@ -83,22 +83,94 @@ tests/CMakeFiles/test_video_compressor.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_video_compressor.dir/test.cpp.s"
 	cd /Users/guosiqi/Desktop/Video-Compressor/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guosiqi/Desktop/Video-Compressor/tests/test.cpp -o CMakeFiles/test_video_compressor.dir/test.cpp.s
 
+tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o: tests/CMakeFiles/test_video_compressor.dir/flags.make
+tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o: /Users/guosiqi/Desktop/Video-Compressor/tests/pipeline.cpp
+tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o: tests/CMakeFiles/test_video_compressor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o"
+	cd /Users/guosiqi/Desktop/Video-Compressor/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o -MF CMakeFiles/test_video_compressor.dir/pipeline.cpp.o.d -o CMakeFiles/test_video_compressor.dir/pipeline.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/tests/pipeline.cpp
+
+tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_video_compressor.dir/pipeline.cpp.i"
+	cd /Users/guosiqi/Desktop/Video-Compressor/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guosiqi/Desktop/Video-Compressor/tests/pipeline.cpp > CMakeFiles/test_video_compressor.dir/pipeline.cpp.i
+
+tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_video_compressor.dir/pipeline.cpp.s"
+	cd /Users/guosiqi/Desktop/Video-Compressor/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guosiqi/Desktop/Video-Compressor/tests/pipeline.cpp -o CMakeFiles/test_video_compressor.dir/pipeline.cpp.s
+
 # Object files for target test_video_compressor
 test_video_compressor_OBJECTS = \
-"CMakeFiles/test_video_compressor.dir/test.cpp.o"
+"CMakeFiles/test_video_compressor.dir/test.cpp.o" \
+"CMakeFiles/test_video_compressor.dir/pipeline.cpp.o"
 
 # External object files for target test_video_compressor
 test_video_compressor_EXTERNAL_OBJECTS =
 
-tests/libtest_video_compressor.a: tests/CMakeFiles/test_video_compressor.dir/test.cpp.o
-tests/libtest_video_compressor.a: tests/CMakeFiles/test_video_compressor.dir/build.make
-tests/libtest_video_compressor.a: tests/CMakeFiles/test_video_compressor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtest_video_compressor.a"
-	cd /Users/guosiqi/Desktop/Video-Compressor/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_video_compressor.dir/cmake_clean_target.cmake
+tests/test_video_compressor: tests/CMakeFiles/test_video_compressor.dir/test.cpp.o
+tests/test_video_compressor: tests/CMakeFiles/test_video_compressor.dir/pipeline.cpp.o
+tests/test_video_compressor: tests/CMakeFiles/test_video_compressor.dir/build.make
+tests/test_video_compressor: libvideo_compressor_lib.a
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_gapi.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_stitching.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_alphamat.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_aruco.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_bgsegm.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_bioinspired.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_ccalib.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_dnn_objdetect.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_dnn_superres.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_dpm.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_face.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_freetype.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_fuzzy.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_hfs.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_img_hash.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_intensity_transform.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_line_descriptor.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_mcc.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_quality.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_rapid.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_reg.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_rgbd.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_saliency.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_sfm.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_signal.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_stereo.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_structured_light.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_phase_unwrapping.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_superres.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_optflow.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_surface_matching.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_tracking.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_highgui.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_datasets.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_plot.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_text.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_videostab.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_videoio.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_viz.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_wechat_qrcode.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_xfeatures2d.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_ml.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_shape.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_ximgproc.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_video.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_xobjdetect.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_imgcodecs.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_objdetect.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_calib3d.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_dnn.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_features2d.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_flann.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_xphoto.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_photo.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_imgproc.4.11.0.dylib
+tests/test_video_compressor: /opt/homebrew/lib/libopencv_core.4.11.0.dylib
+tests/test_video_compressor: tests/CMakeFiles/test_video_compressor.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_video_compressor"
 	cd /Users/guosiqi/Desktop/Video-Compressor/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_video_compressor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-tests/CMakeFiles/test_video_compressor.dir/build: tests/libtest_video_compressor.a
+tests/CMakeFiles/test_video_compressor.dir/build: tests/test_video_compressor
 .PHONY : tests/CMakeFiles/test_video_compressor.dir/build
 
 tests/CMakeFiles/test_video_compressor.dir/clean:

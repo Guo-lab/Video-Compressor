@@ -83,19 +83,19 @@ CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/base_algorithm.cpp -o CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.s
 
-CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o: CMakeFiles/video_compressor_lib.dir/flags.make
-CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o: /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp
-CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o: CMakeFiles/video_compressor_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o -MF CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o.d -o CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp
+CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o: CMakeFiles/video_compressor_lib.dir/flags.make
+CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o: /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/cv_downsample_algorithm.cpp
+CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o: CMakeFiles/video_compressor_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/guosiqi/Desktop/Video-Compressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o -MF CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o.d -o CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/cv_downsample_algorithm.cpp
 
-CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp > CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.i
+CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/cv_downsample_algorithm.cpp > CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.i
 
-CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp -o CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.s
+CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/guosiqi/Desktop/Video-Compressor/src/algorithms/cv_downsample_algorithm.cpp -o CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.s
 
 CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o: CMakeFiles/video_compressor_lib.dir/flags.make
 CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o: /Users/guosiqi/Desktop/Video-Compressor/src/core/decoder.cpp
@@ -170,7 +170,7 @@ CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.s: cmake_force
 # Object files for target video_compressor_lib
 video_compressor_lib_OBJECTS = \
 "CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o" \
-"CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o" \
+"CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o" \
 "CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o" \
 "CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o" \
 "CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o" \
@@ -181,7 +181,7 @@ video_compressor_lib_OBJECTS = \
 video_compressor_lib_EXTERNAL_OBJECTS =
 
 libvideo_compressor_lib.a: CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o
-libvideo_compressor_lib.a: CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o
+libvideo_compressor_lib.a: CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o
 libvideo_compressor_lib.a: CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o
 libvideo_compressor_lib.a: CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o
 libvideo_compressor_lib.a: CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o

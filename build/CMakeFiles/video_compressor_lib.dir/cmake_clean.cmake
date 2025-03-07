@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o"
   "CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o.d"
-  "CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o"
-  "CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o.d"
+  "CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o"
+  "CMakeFiles/video_compressor_lib.dir/src/algorithms/cv_downsample_algorithm.cpp.o.d"
   "CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o"
   "CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o.d"
   "CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o"

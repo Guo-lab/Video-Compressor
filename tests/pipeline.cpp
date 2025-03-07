@@ -1,6 +1,4 @@
-#include <iostream>
-#include <opencv2/opencv.hpp>
-#include <string>
+#include "test.hpp"
 
 // Use FFmpeg to extract audio from input video
 bool extractAudio(const std::string &inputVideo, const std::string &outputAudio) {
@@ -44,7 +42,7 @@ int pipeline_main(int argc, char **argv) {
     int width = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_WIDTH));
     int height = static_cast<int>(cap.get(cv::CAP_PROP_FRAME_HEIGHT));
     double fps = cap.get(cv::CAP_PROP_FPS);
-    int fourcc = cv::VideoWriter::fourcc('X', '2', '6', '4');
+    int fourcc = cv::VideoWriter::fourcc('a', 'v', 'c', 'i');
 
     std::cout << "Input video: " << width << "x" << height << " @ " << fps << " fps" << std::endl;
 

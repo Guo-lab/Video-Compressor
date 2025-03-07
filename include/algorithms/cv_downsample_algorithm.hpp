@@ -7,21 +7,22 @@ namespace vcompress {
 namespace algorithm {
 
 /// @brief By reducing the spatial resolution of each frame.
-class DownsampleAlgorithm : public BaseCompressionAlgorithm {
+class CVDownsampleAlgorithm : public BaseCompressionAlgorithm {
   public:
-    DownsampleAlgorithm();
-    ~DownsampleAlgorithm() override;
+    CVDownsampleAlgorithm();
+    ~CVDownsampleAlgorithm() override;
 
     bool initialize(const CompressionConfig &config) override;
     std::vector<uint8_t> compressFrame(const Frame &frame) override;
     Frame decompressFrame(const std::vector<uint8_t> &compressed_data) override;
-    std::string getAlgorithmName() const override { return "Downsample"; }
+    std::string getAlgorithmName() const override { return "CVDownsample"; }
     std::string getStats() const override;
     CompressionError getLastError() const override { return CompressionError(); }
     void reset() override;
 
     void updateCompressionStats(const cv::Mat &original, const cv::Mat &compressed);
     void copyMatToBuffer(const cv::Mat &mat, int w, int h, uint8_t *buffer);
+    cv::Mat copyBufferToMat(const uint8_t *buffer, int &w, int &h, size_t bufferSize);
 
   private:
     // Shared by All instances
