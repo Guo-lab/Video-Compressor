@@ -10,8 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/guosiqi/Desktop/Video-Compressor/src/algorithms/base_algorithm.cpp" "CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/algorithms/base_algorithm.cpp.o.d"
   "/Users/guosiqi/Desktop/Video-Compressor/src/algorithms/downsample_algorithm.cpp" "CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.o.d"
-  "/Users/guosiqi/Desktop/Video-Compressor/src/pipeline.cpp" "CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o.d"
+  "/Users/guosiqi/Desktop/Video-Compressor/src/core/decoder.cpp" "CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o.d"
+  "/Users/guosiqi/Desktop/Video-Compressor/src/core/encoder.cpp" "CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o.d"
   "/Users/guosiqi/Desktop/Video-Compressor/src/utils/audio.cpp" "CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o.d"
+  "/Users/guosiqi/Desktop/Video-Compressor/src/utils/file_reader.cpp" "CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.o.d"
+  "/Users/guosiqi/Desktop/Video-Compressor/src/utils/file_writer.cpp" "CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.o" "gcc" "CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

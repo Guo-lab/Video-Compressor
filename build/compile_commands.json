@@ -13,15 +13,33 @@
 },
 {
   "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/pipeline.cpp",
-  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/pipeline.cpp",
-  "output": "CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o"
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/core/decoder.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/core/decoder.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/core/encoder.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/core/encoder.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o"
 },
 {
   "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/utils/audio.cpp",
   "file": "/Users/guosiqi/Desktop/Video-Compressor/src/utils/audio.cpp",
   "output": "CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/utils/file_reader.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/utils/file_reader.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.o"
+},
+{
+  "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/guosiqi/Desktop/Video-Compressor/include -I/Users/guosiqi/Desktop/Video-Compressor/src -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wall -Wextra -O2 -Werror -std=c++17 -o CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.o -c /Users/guosiqi/Desktop/Video-Compressor/src/utils/file_writer.cpp",
+  "file": "/Users/guosiqi/Desktop/Video-Compressor/src/utils/file_writer.cpp",
+  "output": "CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.o"
 },
 {
   "directory": "/Users/guosiqi/Desktop/Video-Compressor/build",

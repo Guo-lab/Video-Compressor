@@ -203,6 +203,54 @@ src/algorithms/downsample_algorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/algorithms/downsample_algorithm.cpp.s
 .PHONY : src/algorithms/downsample_algorithm.cpp.s
 
+src/core/decoder.o: src/core/decoder.cpp.o
+.PHONY : src/core/decoder.o
+
+# target to build an object file
+src/core/decoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.o
+.PHONY : src/core/decoder.cpp.o
+
+src/core/decoder.i: src/core/decoder.cpp.i
+.PHONY : src/core/decoder.i
+
+# target to preprocess a source file
+src/core/decoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.i
+.PHONY : src/core/decoder.cpp.i
+
+src/core/decoder.s: src/core/decoder.cpp.s
+.PHONY : src/core/decoder.s
+
+# target to generate assembly for a file
+src/core/decoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/core/decoder.cpp.s
+.PHONY : src/core/decoder.cpp.s
+
+src/core/encoder.o: src/core/encoder.cpp.o
+.PHONY : src/core/encoder.o
+
+# target to build an object file
+src/core/encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.o
+.PHONY : src/core/encoder.cpp.o
+
+src/core/encoder.i: src/core/encoder.cpp.i
+.PHONY : src/core/encoder.i
+
+# target to preprocess a source file
+src/core/encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.i
+.PHONY : src/core/encoder.cpp.i
+
+src/core/encoder.s: src/core/encoder.cpp.s
+.PHONY : src/core/encoder.s
+
+# target to generate assembly for a file
+src/core/encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/core/encoder.cpp.s
+.PHONY : src/core/encoder.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -226,30 +274,6 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor.dir/build.make CMakeFiles/video_compressor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/pipeline.o: src/pipeline.cpp.o
-.PHONY : src/pipeline.o
-
-# target to build an object file
-src/pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.o
-.PHONY : src/pipeline.cpp.o
-
-src/pipeline.i: src/pipeline.cpp.i
-.PHONY : src/pipeline.i
-
-# target to preprocess a source file
-src/pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.i
-.PHONY : src/pipeline.cpp.i
-
-src/pipeline.s: src/pipeline.cpp.s
-.PHONY : src/pipeline.s
-
-# target to generate assembly for a file
-src/pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/pipeline.cpp.s
-.PHONY : src/pipeline.cpp.s
 
 src/utils/audio.o: src/utils/audio.cpp.o
 .PHONY : src/utils/audio.o
@@ -275,6 +299,54 @@ src/utils/audio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/audio.cpp.s
 .PHONY : src/utils/audio.cpp.s
 
+src/utils/file_reader.o: src/utils/file_reader.cpp.o
+.PHONY : src/utils/file_reader.o
+
+# target to build an object file
+src/utils/file_reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.o
+.PHONY : src/utils/file_reader.cpp.o
+
+src/utils/file_reader.i: src/utils/file_reader.cpp.i
+.PHONY : src/utils/file_reader.i
+
+# target to preprocess a source file
+src/utils/file_reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.i
+.PHONY : src/utils/file_reader.cpp.i
+
+src/utils/file_reader.s: src/utils/file_reader.cpp.s
+.PHONY : src/utils/file_reader.s
+
+# target to generate assembly for a file
+src/utils/file_reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/file_reader.cpp.s
+.PHONY : src/utils/file_reader.cpp.s
+
+src/utils/file_writer.o: src/utils/file_writer.cpp.o
+.PHONY : src/utils/file_writer.o
+
+# target to build an object file
+src/utils/file_writer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.o
+.PHONY : src/utils/file_writer.cpp.o
+
+src/utils/file_writer.i: src/utils/file_writer.cpp.i
+.PHONY : src/utils/file_writer.i
+
+# target to preprocess a source file
+src/utils/file_writer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.i
+.PHONY : src/utils/file_writer.cpp.i
+
+src/utils/file_writer.s: src/utils/file_writer.cpp.s
+.PHONY : src/utils/file_writer.s
+
+# target to generate assembly for a file
+src/utils/file_writer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/video_compressor_lib.dir/build.make CMakeFiles/video_compressor_lib.dir/src/utils/file_writer.cpp.s
+.PHONY : src/utils/file_writer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -292,15 +364,24 @@ help:
 	@echo "... src/algorithms/downsample_algorithm.o"
 	@echo "... src/algorithms/downsample_algorithm.i"
 	@echo "... src/algorithms/downsample_algorithm.s"
+	@echo "... src/core/decoder.o"
+	@echo "... src/core/decoder.i"
+	@echo "... src/core/decoder.s"
+	@echo "... src/core/encoder.o"
+	@echo "... src/core/encoder.i"
+	@echo "... src/core/encoder.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pipeline.o"
-	@echo "... src/pipeline.i"
-	@echo "... src/pipeline.s"
 	@echo "... src/utils/audio.o"
 	@echo "... src/utils/audio.i"
 	@echo "... src/utils/audio.s"
+	@echo "... src/utils/file_reader.o"
+	@echo "... src/utils/file_reader.i"
+	@echo "... src/utils/file_reader.s"
+	@echo "... src/utils/file_writer.o"
+	@echo "... src/utils/file_writer.i"
+	@echo "... src/utils/file_writer.s"
 .PHONY : help
 
 
