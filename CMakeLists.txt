@@ -79,17 +79,6 @@ message(STATUS "LIB_SOURCES: ${LIB_SOURCES}")
 #############################
 #       Build Targets
 #############################
-add_library(
-    video_compressor_lib STATIC ${LIB_SOURCES})
-target_include_directories(video_compressor_lib 
-    PUBLIC 
-        include 
-        src
-        ${OpenCV_INCLUDE_DIRS})
-target_link_libraries(video_compressor_lib 
-    PUBLIC 
-        ${OpenCV_LIBS})
-message(STATUS "Lib target name: video_compressor_lib")
 
 if(USE_CUDA)
     add_library(
