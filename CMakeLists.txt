@@ -29,16 +29,39 @@ add_compile_options(
 #############################
 #    External Libraries
 #############################
-find_package(OpenCV REQUIRED)
+find_package(OpenCV)
 message(STATUS "OpenCV version: ${OpenCV_VERSION}")
 message(STATUS "OpenCV libraries: ${OpenCV_LIBS}")
 message(STATUS "OpenCV include directories: ${OpenCV_INCLUDE_DIRS}")
 
+find_package(CUDA QUIET)
+if(CUDA_FOUND)
+    message(STATUS "CUDA found: ${CUDA_VERSION}")
+    message(STATUS "CUDA libraries: ${CUDA_LIBRARIES}")
+    message(STATUS "CUDA include directories: ${CUDA_INCLUDE_DIRS}")
+    option(USE_CUDA "Build with CUDA support" ON)
+else()
+    option(USE_CUDA "Build with CUDA support" OFF)
+    message(STATUS "CUDA not found, building CPU-only version")
+endif()
 
 
 #############################
 #        Source Files
 #############################
+if(USE_CUDA)
+    enable_language(CUDA)
+    set(CMAKE_CUDA_STANDARD 14)
+    set(CMAKE_CUDA_STANDARD_REQUIRED ON)
+    
+    add_definitions(-DUSE_CUDA)
+    find_package(CUDAToolkit REQUIRED)
+    file(GLOB_RECURSE CUDA_SOURCES "src/*.cu")
+
+    message(STATUS "CUDA source files: ${CUDA_SOURCES}")
+endif()
+
+
 # Add all source files in the src folder and its subfolders
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 file(GLOB MAIN_SOURCE "src/main.cpp")
@@ -49,6 +72,7 @@ list(FILTER LIB_SOURCES EXCLUDE REGEX "src/main.cpp")
 message(STATUS "SOURCES: ${SOURCES}")
 message(STATUS "MAIN_SOURCE: ${MAIN_SOURCE}")
 message(STATUS "LIB_SOURCES: ${LIB_SOURCES}")
+
 
 
 
@@ -67,6 +91,40 @@ target_link_libraries(video_compressor_lib
         ${OpenCV_LIBS})
 message(STATUS "Lib target name: video_compressor_lib")
 
+if(USE_CUDA)
+    add_library(
+        video_compressor_lib STATIC ${LIB_SOURCES} ${CUDA_SOURCES})
+
+    target_include_directories(video_compressor_lib 
+        PUBLIC 
+            include 
+            src
+            ${OpenCV_INCLUDE_DIRS}
+            ${CUDA_INCLUDE_DIRS})
+
+    target_link_libraries(video_compressor_lib 
+        PUBLIC ${OpenCV_LIBS} CUDA::cudart)
+
+    target_compile_definitions(video_compressor_lib 
+        PUBLIC USE_CUDA=1)
+
+else()
+    add_library(
+        video_compressor_lib STATIC ${LIB_SOURCES})
+
+    target_include_directories(video_compressor_lib 
+        PUBLIC 
+            include 
+            src
+            ${OpenCV_INCLUDE_DIRS})
+
+    target_link_libraries(video_compressor_lib 
+        PUBLIC 
+            ${OpenCV_LIBS})
+endif()
+
+message(STATUS "Lib target name: video_compressor_lib")
+
 
 
 #############################
@@ -81,6 +139,18 @@ target_link_libraries(video_compressor
         video_compressor_lib)
 message(STATUS "Executable target name: video_compressor")
 
+if(USE_CUDA)
+    add_executable(
+        video_compressor_cpu ${MAIN_SOURCE})
+
+    target_link_libraries(video_compressor_cpu
+        PRIVATE video_compressor_lib)
+
+    target_compile_definitions(video_compressor_cpu 
+        PRIVATE USE_CUDA=0)
+
+    message(STATUS "CPU-only executable target name: video_compressor_cpu")
+endif()
 
 
 #############################

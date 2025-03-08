@@ -32,9 +32,12 @@
 *.app
 
 build/
+
+
 input_videos/
 output_videos/
 
 .DS_Store
 
+.vscode/sftp.json
 .cache/
