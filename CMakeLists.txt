@@ -16,14 +16,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+
 add_compile_options(
     -Wall
     -Wextra
     -O2
-    -Werror
-    -std=c++17
 )
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Werror")
 
 
 #############################
@@ -51,16 +50,21 @@ endif()
 #############################
 if(USE_CUDA)
     enable_language(CUDA)
-    set(CMAKE_CUDA_STANDARD 14)
+    set(CMAKE_CUDA_STANDARD 17)
     set(CMAKE_CUDA_STANDARD_REQUIRED ON)
-    
-    add_definitions(-DUSE_CUDA)
+    set(CMAKE_CUDA_EXTENSIONS OFF)
+    set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -Xcudafe --display_error_number")
+    set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --compiler-options -Wno-error=deprecated-declarations -Wno-deprecated-gpu-targets")
+
     find_package(CUDAToolkit REQUIRED)
     file(GLOB_RECURSE CUDA_SOURCES "src/*.cu")
 
     message(STATUS "CUDA source files: ${CUDA_SOURCES}")
 endif()
 
+if(USE_CUDA)
+    set(CMAKE_CUDA_ARCHITECTURES "50;60;70")
+endif()
 
 # Add all source files in the src folder and its subfolders
 file(GLOB_RECURSE SOURCES "src/*.cpp")
@@ -79,7 +83,6 @@ message(STATUS "LIB_SOURCES: ${LIB_SOURCES}")
 #############################
 #       Build Targets
 #############################
-
 if(USE_CUDA)
     add_library(
         video_compressor_lib STATIC ${LIB_SOURCES} ${CUDA_SOURCES})
@@ -110,6 +113,9 @@ else()
     target_link_libraries(video_compressor_lib 
         PUBLIC 
             ${OpenCV_LIBS})
+            
+    target_compile_definitions(video_compressor_lib 
+        PRIVATE USE_CUDA=0)
 endif()
 
 message(STATUS "Lib target name: video_compressor_lib")
@@ -129,14 +135,23 @@ target_link_libraries(video_compressor
 message(STATUS "Executable target name: video_compressor")
 
 if(USE_CUDA)
-    add_executable(
-        video_compressor_cpu ${MAIN_SOURCE})
+    # Create separate lib for CPU-only version to avoid definition conflicts
+    add_library(video_compressor_lib_cpu 
+        STATIC ${LIB_SOURCES})
 
-    target_link_libraries(video_compressor_cpu
-        PRIVATE video_compressor_lib)
+    target_include_directories(video_compressor_lib_cpu 
+        PUBLIC include src ${OpenCV_INCLUDE_DIRS})
 
-    target_compile_definitions(video_compressor_cpu 
+    target_link_libraries(video_compressor_lib_cpu 
+        PUBLIC ${OpenCV_LIBS})
+
+    target_compile_definitions(video_compressor_lib_cpu 
         PRIVATE USE_CUDA=0)
+    
+    # Link CPU executable to CPU-only lib
+    add_executable(video_compressor_cpu ${MAIN_SOURCE})
+    target_link_libraries(video_compressor_cpu 
+        PRIVATE video_compressor_lib_cpu)
 
     message(STATUS "CPU-only executable target name: video_compressor_cpu")
 endif()

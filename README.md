@@ -20,3 +20,16 @@
 
     `./tests/test_video_compressor  ../input_videos/SABRINA.mp4 ../output_videos/output_test.mp4`
 
+
+## Appendix
+Before running the program, make sure you have the following libraries installed:
+- OpenCV  
+    `sudo apt install libopencv-dev`    
+    `pkg-config --modversion opencv4`  
+- FFmpeg  
+  `sudo apt update && sudo apt install ffmpeg -y`  
+  `ffmpeg -version`  
+
+- CMake
+- GTest
+- (Optional) CUDA `nvcc --version` 

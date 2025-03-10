@@ -31,8 +31,8 @@
 *.out
 *.app
 
-build/
-
+build/*
+!build/.gitkeep
 
 input_videos/
 output_videos/
@@ -40,4 +40,5 @@ output_videos/
 .DS_Store
 
 .vscode/sftp.json
+.vscode/ece_sftp.json
 .cache/

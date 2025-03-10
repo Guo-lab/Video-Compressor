@@ -1,4 +1,5 @@
 #include "algorithms/base_algorithm.hpp"
+#include "algorithms/bilinear_downsample_algorithm.hpp"
 #include "algorithms/cv_downsample_algorithm.hpp"
 #include "core/decoder.hpp"
 #include "core/encoder.hpp"
@@ -38,6 +39,16 @@ void registerAlgorithms() {
     AlgorithmFactory::registerAlgorithm("CVDownsample", []() -> std::unique_ptr<BaseCompressionAlgorithm> {
         return std::make_unique<CVDownsampleAlgorithm>();
     });
+    AlgorithmFactory::registerAlgorithm("BilinearDownsample",
+                                        []() -> std::unique_ptr<BaseCompressionAlgorithm> {
+                                            return std::make_unique<BilinearDownsampleAlgorithm>();
+                                        });
+#ifdef USE_CUDA
+    AlgorithmFactory::registerAlgorithm("CudaBilinearDownsample",
+                                        []() -> std::unique_ptr<BaseCompressionAlgorithm> {
+                                            return std::make_unique<CudaBilinearDownsampleAlgorithm>();
+                                        });
+#endif
 }
 
 // List available algorithms
